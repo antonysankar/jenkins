@@ -1,0 +1,9 @@
+---
+- name: Verify the Jenkins service
+  hosts: localhost
+  
+  tasks:
+    - name: Ensure the Jenkins is reachable
+      uri:
+        url: http://10.0.2.15:8080
+        status_code: 200
