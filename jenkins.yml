@@ -1,6 +1,6 @@
 ---
 - name: Verify the Jenkins service
-  hosts: localhost
+  hosts: jenkins_server
   
   tasks:
     - name: Ensure the Jenkins is reachable
